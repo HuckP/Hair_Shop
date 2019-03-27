@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/Main.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Mirza|Hi+Melody" rel="stylesheet">
+    </head>
+    <body>
+        <% include ./nav.ejs %>
+        <% for(var i=1;i<=9; i++) { %>
+            <div>
+                <h2>제목: <%= title[i] %></h2>
+                <br/>
+                <a href="<%= url[i] %>"><img src="https://i.ytimg.com/vi/<%= video_id[i] %>/0.jpg"></a>
+                
+            </div>
+        <% } %>
+        <% include ./footer.ejs %>
+    </body>
+</html>
